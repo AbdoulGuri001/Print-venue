@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+</head>
+<body style="background-color: gainsboro;">
+    <center>
+        <img src="images/logo.png" alt="Logo" width="200px" align="center">
+</center>
+<h1 align="center" style="background-color: rgb(48, 40, 153); color: white">Welcome to the News Page!</h1>
+<marquee behavior="" direction="" style="color: green;">Application for 2023/2024 is now open, go to the Admission section to start your application!</marquee>
+
+<h2 id="greetings" style="color: rgb(48, 40, 153); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></h2>
+    <table>
+                
+        <tr>
+            <td><img src="images/application.jpg" alt="Application image" width="700px" vspace="10px"></td>
+            <td><p style="text-align: justify;"><strong>USMANIA Academy</strong> is happily notifying the individuals and the beautiful applicants that it has started selling the new intake form for any of who willing to study and get high and qualitative certificate in a different sweetable courses available at the academy.</p> <br><a href="application.html">Click here to start your application</a></td>
+            
+        </tr>
+        <tr>
+            <td><img src="images/blog.jpg" alt=""></td>
+            <td><p style="text-align: justify;">An image of our final year students practicing some projects in the academy computer studio, some of the look tired but its cool! we are grooming them to that they can be able to tackle and depend them-selves where ever they find their selfs.</p>
+                <br>
+                <a href="images/blog.jpg">DOWNLOAD IMAGE</a></td>
+        </tr>
+        <tr>
+            <td><img src="images/graduates.jpg" alt="" width="700px"></td>
+            <td><p style="text-align: justify;" >An image of our graduating students at their practicingold boys and girls of the year 2020. its cool! we are grooming them to that they can be able to tackle and depend them-selves where ever they find their selfs. Stay happy! and be Blessed...</p>
+                <br>
+                <a href="images/graduates.jpg" >DOWNLOAD IMAGE</a></td>
+        </tr>
+      
+       
+    </table>
+
+
+    <footer align="center" style="background-color: rgb(8, 44, 110); color: white;">
+        <p style="padding: 10px;">&copy; Usmania Academy. All Rights Reserved 2023.</p>
+    </footer>
+
+    <script>
+
+     
+
+        const hour = new Date().getHours();
+        
+        let greetings; 
+        
+        let user = prompt("Please Enter your name: ");
+        
+        if (user != null){
+        
+        
+        if (hour < 18){
+            
+            greetings = `Good morning, ${user}.`;
+        }else {
+            greetings = `Good evening, ${user}.`;
+        }
+        }
+        
+        else {
+            if (hour < 18){
+            
+            greetings = `Good morning,`;
+        }else {
+            greetings = `Good evening,`;
+        }
+        }
+            
+        document.getElementById("greetings").innerHTML = greetings;
+        
+        
+        </script>
+</body>
+</html>

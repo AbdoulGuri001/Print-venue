@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Admission</title>
+</head>
+<body>
+    <div>
+        <center>
+                <img src="images/logo.png" alt="Logo" width="200px" align="center">
+        </center>
+                <h1 align="center" style="background-color: rgb(8, 44, 110); color: white; padding: 10px;">Admission Portal 2023/2024 Session</h1>
+            </div>
+            <div class="time">
+
+        <table>
+            <tr><td style="font-family: fantasy; ">Time: </td>
+               <td></p> <h2 id="current-time" style="color:rgb(48, 40, 153)"></h2></td>
+           </tr>
+        </table>
+            </div>
+
+            <td><img src="images/application.jpg" alt="Application image" width="700px" vspace="10px"></td>
+            <td><p style="text-align: justify;"><strong>USMANIA Academy</strong> is happily notifying the individuals and the beautiful applicants that it has started selling the new intake form for any of who willing to study and get high and qualitative certificate in a different sweetable courses available at the academy.</p> <br><a href="application.html">Click here to start your application</a></td>
+
+
+   <footer align="center" style="background-color: rgb(8, 44, 110); color: white;">
+    <p style="padding: 10px;">&copy; Usmania Academy. All Rights Reserved 2023.</p>
+</footer>
+<script>
+     function updateTime() {
+      const currentTimeElement = document.getElementById('current-time');
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const seconds = now.getSeconds().toString().padStart(2, '0');
+
+      const currentTimeString = `${hours}:${minutes}:${seconds}`;
+      currentTimeElement.textContent = currentTimeString;
+    }
+
+    // Update time every second
+    setInterval(updateTime, 1000);
+
+    // Initial call to display time immediately
+    updateTime();
+
+    alert("This page is secured");
+  </script>
+</script>         
+</body>
+</html>
